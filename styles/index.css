@@ -1,0 +1,148 @@
+/* VAR */
+:root {
+  --primary-bg-color: #13141b;
+  --primary-text-color: #fff;
+  --primary-box-color: #282e3a;
+  --primary-btn-color: #0ceb8b;
+  --primary-border-radius: 4px;
+  --secondary-border-radius: 24px;
+  --danger-color: red;
+}
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+/* STYLES */
+
+body {
+  background-color: var(--primary-bg-color);
+  color: white;
+  font-family: 'Sansation', sans-serif;
+}
+
+nav {
+  padding: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 90px;
+}
+
+.btn-primary {
+  padding: 0.5rem;
+  color: var(--primary-text-color);
+  background-color: var(--primary-btn-color);
+  border: none;
+  border-radius: var(--primary-border-radius);
+}
+
+.btn-primary a {
+  text-decoration: none;
+  color: white;
+}
+header {
+  position: relative;
+}
+
+header img {
+  opacity: 0.15;
+  display: block;
+}
+
+header figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+header h1 {
+  position: absolute;
+  padding: 1rem;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 span:nth-child(2) {
+  color: var(--danger-color);
+}
+
+main h2 {
+  padding: 0 1rem;
+  padding-top: 1rem;
+  margin-bottom: -1.1rem;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.movie-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-box h3 {
+  padding-top: 0.5rem;
+}
+
+.movie-box figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+.movie-box figcaption {
+  position: relative;
+}
+
+.movie-duration {
+  position: absolute;
+  top: -1.5rem;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: var(--primary-border-radius);
+  z-index: 1;
+}
+
+.movie-box button {
+  margin-left: auto;
+  margin-right: 0.5rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
