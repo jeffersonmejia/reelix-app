@@ -54,7 +54,7 @@ nav ul {
 
 .btn-primary a {
   text-decoration: none;
-  color: white;
+  color: var(--primary-bg-color);
 }
 header {
   position: relative;
