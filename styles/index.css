@@ -158,3 +158,111 @@ footer {
   justify-content: center;
   padding: 2rem;
 }
+
+/* LISSETH - VERSIÓN: LAPTOP */
+@media screen and (min-width: 500px) {
+  header {
+    height: 90vh;
+    overflow: hidden;
+  }
+  header :is(figure, img) {
+    height: 100%;
+  }
+
+  header img {
+    object-fit: cover;
+    object-position: top;
+  }
+
+  main {
+    width: 80%;
+    margin: auto;
+  }
+  main section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  main h2 {
+    grid-column: 1/-1;
+  }
+}
+
+/* LISSETH - VERSIÓN: PC */
+@media screen and (min-width: 1080px) {
+  nav ul {
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .logo {
+    width: 110px;
+  }
+
+  nav .btn-primary {
+    margin-right: 0.5rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+
+  header {
+    height: 87vh;
+    overflow: hidden;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    align-items: flex-end;
+  }
+
+  header h1 span:nth-child(2) {
+    font-size: 3rem;
+  }
+
+  header p {
+    font-size: 1.5rem;
+    max-width: 350px;
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  main h2 {
+    font-size: 2rem;
+  }
+
+  main {
+    width: 80%;
+    margin: auto;
+  }
+
+  main section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0;
+  }
+
+  main h2 {
+    grid-column: 1/-1;
+    padding: 3rem 1rem;
+  }
+
+  .movie-box {
+    width: 300px;
+    margin: 1rem;
+  }
+
+  .movie-box img {
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .movie-box h3 {
+    font-size: 1.25rem;
+  }
+
+  footer {
+    font-size: 1.2rem;
+  }
+}
